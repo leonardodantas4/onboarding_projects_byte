@@ -4,7 +4,7 @@ const prisma = new PrismaClient()
 export interface typeHamburguer{
     nome: string,
     descricao: string,
-    preco: string,
+    preco: number,
     ingredientes: string
 }
 
