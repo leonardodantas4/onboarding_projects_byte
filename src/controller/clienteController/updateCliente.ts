@@ -8,12 +8,12 @@ export class UpdateClienteController{
       const {nome, cpf, celular, endereco} = req.body;
   
       try{
-        const testCliente = await prisma.cliente.findUnique({
+        const testeCliente = await prisma.cliente.findUnique({
           where: {
             cpf: cpf
           }
         })
-        if(testCliente == null){
+        if(testeCliente == null){
           return res.status(StatusCodes.UNAUTHORIZED).send({error: "Esse cliente não existe"})
         }
   
