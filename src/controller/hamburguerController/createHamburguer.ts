@@ -9,7 +9,7 @@ export class CreateHamburguerController{
     async handle(req:Request, res: Response){
         const {nome,descricao,preco,ingredientes} = req.body;
         try{
-            if(await prisma.hamburguer.findUnique({where:{id:nome}})){
+            if(await prisma.hamburguer.findUnique({where:{nome:nome}})){
                 return res.status(StatusCodes.UNAUTHORIZED).send({error:"Hamburguer já existente"})
             }
 
