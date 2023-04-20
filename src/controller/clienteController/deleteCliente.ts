@@ -13,7 +13,7 @@ export class DeleteClienteController{
         }
       })
       if(testeCliente == null){
-        return res.status(StatusCodes.UNAUTHORIZED).send({error: "Este cliente não existe"})
+        return res.status(StatusCodes.UNAUTHORIZED).send({error: "Esse cliente não existe"})
       }
 
       const deleteCliente = new DeletandoCliente();
