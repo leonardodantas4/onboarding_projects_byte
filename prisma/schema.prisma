@@ -22,6 +22,6 @@ model Hamburguer {
   id String @id @unique @default(uuid())
   nome String @unique
   descricao String
-  preco Float
+  preco String
   ingredientes String
 }
