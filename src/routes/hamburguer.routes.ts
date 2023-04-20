@@ -1,7 +1,10 @@
 import { Router } from "express";
+import { CreateHamburguerController } from "../controller/hamburguerController/createHamburguer";
 
 const hamburguerRoutes = Router();
 
-hamburguerRoutes.post("/create", );
+const createHamburguer = new CreateHamburguerController();
+
+hamburguerRoutes.post("/create", createHamburguer.handle);
 
 export {hamburguerRoutes};

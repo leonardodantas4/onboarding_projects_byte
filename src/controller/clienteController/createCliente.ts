@@ -21,7 +21,7 @@ export class CreateClienteController{
                 cliente,
             },);
         } catch(err){
-            return res.status(StatusCodes.NOT_FOUND).send({error:"Falha no Registro de cliente"});
+            return res.status(StatusCodes.NOT_FOUND).send({error:"Falha no registro de cliente"});
         }
     };
 }
