@@ -11,17 +11,17 @@ datasource db {
 }
 
 model Cliente {
-  id String @id @unique @default(uuid())
-  nome String
-  cpf String @unique
-  celular String
+  id       String @id @unique @default(uuid())
+  nome     String
+  cpf      String @unique
+  celular  String
   endereco String
 }
 
 model Hamburguer {
-  id String @id @unique @default(uuid())
-  nome String @unique
-  descricao String
-  preco Float
+  id           String @id @unique @default(uuid())
+  nome         String @unique
+  descricao    String
+  preco        Float
   ingredientes String
 }
