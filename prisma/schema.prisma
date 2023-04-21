@@ -20,7 +20,7 @@ model Cliente {
 
 model Hamburguer {
   id           String @id @unique @default(uuid())
-  nome         String
+  nome         String @unique
   descricao    String
   preco        Float
   ingredientes String
