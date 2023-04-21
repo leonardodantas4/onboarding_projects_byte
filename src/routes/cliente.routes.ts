@@ -10,7 +10,7 @@ const updateClienteController = new UpdateClienteController();
 const deleteClienteController = new DeleteClienteController();
 
 clienteRoutes.post("/create", createCliente.handle);
-clienteRoutes.put("/update", updateClienteController.handle);
-clienteRoutes.delete("/delete", deleteClienteController.handle);
+clienteRoutes.put("/update/:cpf", updateClienteController.handle);
+clienteRoutes.delete("/delete/:cpf", deleteClienteController.handle);
 
 export {clienteRoutes};

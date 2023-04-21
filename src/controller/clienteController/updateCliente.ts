@@ -5,7 +5,8 @@ import { prisma } from "./createCliente";
 
 export class UpdateClienteController{
   async handle(req: Request, res: Response){
-    const {nome, cpf, celular, endereco} = req.body;
+    const {cpf} = req.params;
+    const {nome, celular, endereco} = req.body;
 
     try{
       const testeCliente = await prisma.cliente.findUnique({
