@@ -1,5 +1,5 @@
-import { PrismaClient, Hamburguer } from '@prisma/client'
-const prisma = new PrismaClient()
+import { PrismaClient, Hamburguer } from '@prisma/client';
+const prisma = new PrismaClient();
 
 export interface typeHamburguer{
     nome: string,
